@@ -1,0 +1,13 @@
+# Dependencies (none are required to run this site)
+node_modules/
+package-lock.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Scratch / test files
+_*.js

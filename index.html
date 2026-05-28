@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Frame — A Visual Techniques Guide for Media Studies</title>
+  <meta name="description" content="Move from the effect you want to the visual technique that creates it. A production guide for Media Studies students planning music videos." />
+
+  <!-- Editorial type pairing (degrades to system fonts offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to content</a>
+
+  <!-- ============================ HEADER / NAV ============================ -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="brand" href="#/home" data-link>
+        <span class="brand__mark">◢◣</span>
+        <span class="brand__name">THE&nbsp;FRAME</span>
+        <span class="brand__tag">A Visual Techniques Guide</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#/finder"       data-link data-route="finder">Effect Finder</a>
+        <a href="#/explorer"     data-link data-route="explorer">Technique Explorer</a>
+        <a href="#/combinations" data-link data-route="combinations">Combinations</a>
+        <a href="#/gallery"      data-link data-route="gallery">Gallery</a>
+        <a href="#/planner"      data-link data-route="planner">My Plan <span class="nav__count" id="navPlanCount" hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================ MAIN VIEW ============================== -->
+  <main id="view" class="view" tabindex="-1"><!-- rendered by app.js --></main>
+
+  <!-- ============================ FOOTER ================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__line"><strong>THE FRAME</strong> — a production guide for Media Studies students.</p>
+      <p class="footer__note">Every shot is a choice. Choose on purpose.</p>
+    </div>
+  </footer>
+
+  <!-- Data first (defines window.VT), then the app. No build step, no server. -->
+  <script src="data/techniques.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
