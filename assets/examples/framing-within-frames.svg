@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Framing Within Frames — MISE-EN-SCÈNE">
+  <rect width="1280" height="720" fill="#f3efe6"/>
+  <!-- art zone -->
+  <svg x="0" y="0" width="1280" height="540" viewBox="0 0 1280 540">
+    <rect width="1280" height="540" fill="#2c7750"/>
+    <rect x="0" y="0" width="1280" height="540" fill="#2e7d54"/><rect x="17" y="11" width="1263" height="529" fill="none" stroke="#97beaa" stroke-width="7"/><rect x="145" y="138" width="1065" height="332" fill="none" stroke="#79a48e" stroke-width="7"/><rect x="273" y="272" width="867" height="128" fill="none" stroke="#5b8a72" stroke-width="7"/><rect x="420" y="422" width="650" height="-92" fill="none" stroke="#3d6f55" stroke-width="7"/><rect x="559" y="548" width="441" height="-288" fill="none" stroke="#1f5539" stroke-width="7"/>
+  </svg>
+  <!-- caption band -->
+  <rect x="0" y="540" width="1280" height="180" fill="#ece6d9"/>
+  <rect x="0" y="540" width="1280" height="4" fill="#16130d"/>
+  <rect x="0" y="0" width="18" height="720" fill="#2e7d54"/>
+  <text x="70" y="596" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#2e7d54">MISE-EN-SCÈNE</text>
+  <text x="70" y="672" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="62" font-weight="600" fill="#16130d">Framing Within Frames</text>
+  <text x="1210" y="596" text-anchor="end" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="3" fill="#4a4339">MODERATE</text>
+</svg>

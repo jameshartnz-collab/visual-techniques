@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Stillness — PERFORMANCE">
+  <rect width="1280" height="720" fill="#f3efe6"/>
+  <!-- art zone -->
+  <svg x="0" y="0" width="1280" height="540" viewBox="0 0 1280 540">
+    <rect width="1280" height="540" fill="#a9375f"/>
+    <rect x="0" y="0" width="1280" height="540" fill="#b23a64"/><path d="M 334.9967639055103 480 A 136.55319398269057 136.55319398269057 0 0 1 608.1031518708915 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.8"/><path d="M 269.2538806772791 480 A 202.2960772109218 202.2960772109218 0 0 1 673.8460350991227 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.65"/><path d="M 186.5484091034159 480 A 285.001548784785 285.001548784785 0 0 1 756.5515066729859 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.5"/><path d="M 131.4769244962372 480 A 340.0730333919637 340.0730333919637 0 0 1 811.6229912801646 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.3500000000000001"/><circle cx="471.5499578882009" cy="230" r="46" fill="#f3efe6"/><path d="M 471.5499578882009 276 L 471.5499578882009 410 M 471.5499578882009 310 L 401.5499578882009 360 M 471.5499578882009 310 L 541.5499578882009 360 M 471.5499578882009 410 L 416.5499578882009 480 M 471.5499578882009 410 L 526.5499578882009 480" stroke="#f3efe6" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </svg>
+  <!-- caption band -->
+  <rect x="0" y="540" width="1280" height="180" fill="#ece6d9"/>
+  <rect x="0" y="540" width="1280" height="4" fill="#16130d"/>
+  <rect x="0" y="0" width="18" height="720" fill="#b23a64"/>
+  <text x="70" y="596" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#b23a64">PERFORMANCE</text>
+  <text x="70" y="672" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="62" font-weight="600" fill="#16130d">Stillness</text>
+  <text x="1210" y="596" text-anchor="end" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="3" fill="#4a4339">EASY</text>
+</svg>

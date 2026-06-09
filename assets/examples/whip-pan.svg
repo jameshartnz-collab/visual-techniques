@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Whip Pan — CAMERA">
+  <rect width="1280" height="720" fill="#f3efe6"/>
+  <!-- art zone -->
+  <svg x="0" y="0" width="1280" height="540" viewBox="0 0 1280 540">
+    <rect width="1280" height="540" fill="#1d6988"/>
+    <path d="M 90 240 L 90 90 L 240 90" stroke="#f3efe6" stroke-width="10" fill="none" stroke-linecap="square"/><path d="M 1190 240 L 1190 90 L 1040 90" stroke="#f3efe6" stroke-width="10" fill="none" stroke-linecap="square"/><path d="M 90 300 L 90 450 L 240 450" stroke="#f3efe6" stroke-width="10" fill="none" stroke-linecap="square"/><path d="M 1190 300 L 1190 450 L 1040 450" stroke="#f3efe6" stroke-width="10" fill="none" stroke-linecap="square"/><circle cx="729.9823078513145" cy="248.2589803263545" r="92" stroke="#f3efe6" stroke-width="6" fill="none"/><line x1="599.9823078513145" y1="248.2589803263545" x2="859.9823078513145" y2="248.2589803263545" stroke="#f3efe6" stroke-width="4"/><line x1="729.9823078513145" y1="118.2589803263545" x2="729.9823078513145" y2="378.2589803263545" stroke="#f3efe6" stroke-width="4"/><circle cx="729.9823078513145" cy="248.2589803263545" r="10" fill="#8fb7c7"/>
+  </svg>
+  <!-- caption band -->
+  <rect x="0" y="540" width="1280" height="180" fill="#ece6d9"/>
+  <rect x="0" y="540" width="1280" height="4" fill="#16130d"/>
+  <rect x="0" y="0" width="18" height="720" fill="#1f6f8f"/>
+  <text x="70" y="596" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#1f6f8f">CAMERA</text>
+  <text x="70" y="672" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="62" font-weight="600" fill="#16130d">Whip Pan</text>
+  <text x="1210" y="596" text-anchor="end" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="3" fill="#4a4339">MODERATE</text>
+</svg>

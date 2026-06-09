@@ -63,8 +63,9 @@
   }
 
   function techniqueMedia(t) {
-    // Real image if present, otherwise a styled placeholder slot.
-    const path = `assets/examples/${t.id}.jpg`;
+    // Generated SVG panel (assets/examples/<id>.svg). Swap in a real photo of the
+    // same name to override it; falls back to the styled slot if the file is missing.
+    const path = `assets/examples/${t.id}.svg`;
     return `
       <div class="tcard__media">
         <span class="cat-stripe" style="background:var(${catVar(t.category)})"></span>
@@ -375,14 +376,15 @@
         <div class="section-head">
           <p class="eyebrow">Examples Gallery</p>
           <h1>See it in action</h1>
-          <p>A space for real screenshots, stills and GIFs. Drop your own example images into the assets folder and they'll appear here and on the matching technique cards.</p>
+          <p>Every technique ships with a generated, on-brand panel. To use a real screenshot, still or GIF instead, drop an image with the same name into the assets folder and it will take over automatically.</p>
         </div>
 
         <div class="gallery-note">
-          <h3>How to add examples</h3>
-          <p>Save an image named after a technique's id into <code>assets/examples/</code> — for example
-          <code>assets/examples/silhouette.jpg</code>. It will automatically replace the placeholder on that
-          technique's card. Recommended size: 1280×720 (16:9). See the README for the full list of filenames.</p>
+          <h3>How to swap in a real image</h3>
+          <p>Each technique shows <code>assets/examples/&lt;id&gt;.svg</code> by default. To replace one with a photo,
+          save an image named after that technique's id into <code>assets/examples/</code> — for example
+          <code>assets/examples/silhouette.jpg</code> — and update the filename in <code>js/app.js</code> (or
+          rename your file to <code>.svg</code>). Recommended size: 1280×720 (16:9). See the README for the full list.</p>
         </div>
 
         <div class="gallery-grid">
@@ -390,9 +392,9 @@
             <figure class="gframe">
               <div class="tcard__placeholder" style="position:relative;height:100%;--cat-color:color-mix(in srgb, var(${catVar(t.category)}) 14%, var(--paper-2))">
                 <span class="ph-icon">▦</span>
-                <span class="ph-text">${esc(t.id)}.jpg</span>
+                <span class="ph-text">${esc(t.id)}.svg</span>
               </div>
-              <img src="assets/examples/${t.id}.jpg" alt="Example of ${esc(t.name)}" loading="lazy"
+              <img src="assets/examples/${t.id}.svg" alt="Example of ${esc(t.name)}" loading="lazy"
                    onerror="this.remove()" style="position:absolute;inset:0" />
               <figcaption>${esc(t.name)}</figcaption>
             </figure>`).join("")}

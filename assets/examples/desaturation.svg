@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Desaturation — COLOUR">
+  <rect width="1280" height="720" fill="#f3efe6"/>
+  <!-- art zone -->
+  <svg x="0" y="0" width="1280" height="540" viewBox="0 0 1280 540">
+    <rect width="1280" height="540" fill="#65488c"/>
+    <rect x="0.0" y="0" width="182.91" height="540" fill="#bcaece"/><rect x="182.9" y="0" width="182.91" height="540" fill="#a899bc"/><rect x="365.7" y="0" width="182.91" height="540" fill="#9484a9"/><rect x="548.6" y="0" width="182.91" height="540" fill="#817097"/><rect x="731.4" y="0" width="182.91" height="540" fill="#6d5b85"/><rect x="914.3" y="0" width="182.91" height="540" fill="#594672"/><rect x="1097.1" y="0" width="182.91" height="540" fill="#453160"/><line x1="0" y1="250" x2="1280" y2="250" stroke="#f3efe6" stroke-width="5" opacity="0.7"/>
+  </svg>
+  <!-- caption band -->
+  <rect x="0" y="540" width="1280" height="180" fill="#ece6d9"/>
+  <rect x="0" y="540" width="1280" height="4" fill="#16130d"/>
+  <rect x="0" y="0" width="18" height="720" fill="#6a4c93"/>
+  <text x="70" y="596" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#6a4c93">COLOUR</text>
+  <text x="70" y="672" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="62" font-weight="600" fill="#16130d">Desaturation</text>
+  <text x="1210" y="596" text-anchor="end" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="3" fill="#4a4339">EASY</text>
+</svg>

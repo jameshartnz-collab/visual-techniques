@@ -126,28 +126,40 @@ Add an object to `CATEGORIES`, then add a colour for it in `css/styles.css`
 
 ---
 
-## Adding visual examples
+## Visual examples (generated panels)
 
-Each technique automatically looks for an image at:
+Every technique ships with a generated, on-brand **SVG panel** at:
 
 ```
-assets/examples/<id>.jpg
+assets/examples/<id>.svg
 ```
 
-For example `assets/examples/silhouette.jpg`, `assets/examples/jump-cuts.jpg`.
+For example `assets/examples/silhouette.svg`, `assets/examples/jump-cuts.svg`.
+Each panel is colour-coded by production category, carries a procedural editorial
+motif, and is drawn as vector art — so it stays razor-sharp on a 4K classroom
+display, weighs almost nothing, works offline, and carries no copyright risk.
+The panels appear on every technique card and fill the Gallery automatically.
 
-- If the image exists, it replaces the placeholder on that technique's card and
-  fills its slot in the Gallery.
-- If it doesn't exist yet, a clean placeholder shows instead — nothing breaks.
-- Recommended size: **1280 × 720 (16:9)**, `.jpg`.
-
-**`assets/examples/SEARCH-QUERIES.md`** lists the exact filename to save and a
-set of suggested search terms for every technique, so you can quickly find clean,
-legally reusable examples. To regenerate that file after editing the data:
+These panels are produced by `tools/generate-panels.js`. After editing the data
+(e.g. adding a technique), regenerate the set with:
 
 ```bash
-node -e 'global.window={};require("./data/techniques.js");const fs=require("fs");/* see existing file header for the script */'
+node tools/generate-panels.js
 ```
+
+### Swapping in a real photo
+
+To replace a generated panel with a real screenshot or still:
+
+- Save your image into `assets/examples/` named after the technique's id, e.g.
+  `silhouette.jpg`, at **1280 × 720 (16:9)**.
+- Change the extension used in `js/app.js` from `.svg` to `.jpg` — globally in
+  `techniqueMedia()` and the Gallery if replacing them all, or per-technique.
+- If a referenced file is missing, the card falls back to a clean placeholder —
+  nothing breaks.
+
+**`assets/examples/SEARCH-QUERIES.md`** lists a suggested filename and search
+terms for every technique, so you can quickly find clean, legally reusable photos.
 
 ### Using legal images only
 

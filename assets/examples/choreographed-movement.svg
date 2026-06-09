@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Choreographed Movement — PERFORMANCE">
+  <rect width="1280" height="720" fill="#f3efe6"/>
+  <!-- art zone -->
+  <svg x="0" y="0" width="1280" height="540" viewBox="0 0 1280 540">
+    <rect width="1280" height="540" fill="#a9375f"/>
+    <rect x="0" y="0" width="1280" height="540" fill="#b23a64"/><path d="M 339.7485087066889 480 A 133.72370691038668 133.72370691038668 0 0 1 607.1959225274622 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.8"/><path d="M 263.1451650406234 480 A 210.32705057645217 210.32705057645217 0 0 1 683.7992661935277 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.65"/><path d="M 192.52940739039332 480 A 280.94280822668225 280.94280822668225 0 0 1 754.4150238437578 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.5"/><path d="M 128.52665816666558 480 A 344.94555745041 344.94555745041 0 0 1 818.4177730674855 480" stroke="#d99db2" stroke-width="4" fill="none" opacity="0.3500000000000001"/><circle cx="473.47221561707556" cy="230" r="46" fill="#f3efe6"/><path d="M 473.47221561707556 276 L 473.47221561707556 410 M 473.47221561707556 310 L 403.47221561707556 360 M 473.47221561707556 310 L 543.4722156170756 360 M 473.47221561707556 410 L 418.47221561707556 480 M 473.47221561707556 410 L 528.4722156170756 480" stroke="#f3efe6" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </svg>
+  <!-- caption band -->
+  <rect x="0" y="540" width="1280" height="180" fill="#ece6d9"/>
+  <rect x="0" y="540" width="1280" height="4" fill="#16130d"/>
+  <rect x="0" y="0" width="18" height="720" fill="#b23a64"/>
+  <text x="70" y="596" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#b23a64">PERFORMANCE</text>
+  <text x="70" y="672" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="62" font-weight="600" fill="#16130d">Choreographed Movement</text>
+  <text x="1210" y="596" text-anchor="end" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="3" fill="#4a4339">ADVANCED</text>
+</svg>
