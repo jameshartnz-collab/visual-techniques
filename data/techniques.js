@@ -23,7 +23,7 @@
      related     array of other technique ids
      effects     array of EFFECT ids this technique helps achieve
      queries     search terms for finding clean, legal reference examples
-   The image is found automatically at:  assets/examples/<id>.jpg
+   The image is found automatically at:  assets/examples/<id>.png
    ============================================================================= */
 
 const CATEGORIES = [

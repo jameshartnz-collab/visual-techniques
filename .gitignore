@@ -11,3 +11,7 @@ Thumbs.db
 
 # Scratch / test files
 _*.js
+
+# Image sources kept out of the deploy (the optimised .jpg versions ship instead)
+assets/examples2/
+assets/examples/*.png

@@ -126,37 +126,34 @@ Add an object to `CATEGORIES`, then add a colour for it in `css/styles.css`
 
 ---
 
-## Visual examples (generated panels)
+## Visual examples
 
-Every technique ships with a generated, on-brand **SVG panel** at:
+Each technique shows a cinematic still. The stills share a grounded contemporary
+indie-film style and are composed so students can recognise each technique without
+labels or diagrams. They appear on every technique card and fill the Gallery.
+
+The site loads an **optimised JPEG** first and falls back to the generated **SVG
+panel** for any technique whose photo isn't done yet — so it always looks finished:
 
 ```
-assets/examples/<id>.svg
+assets/examples/<id>.jpg   ← optimised photo (shipped to the live site)
+assets/examples/<id>.svg   ← generated fallback panel (always present)
 ```
 
-For example `assets/examples/silhouette.svg`, `assets/examples/jump-cuts.svg`.
-Each panel is colour-coded by production category, carries a procedural editorial
-motif, and is drawn as vector art — so it stays razor-sharp on a 4K classroom
-display, weighs almost nothing, works offline, and carries no copyright risk.
-The panels appear on every technique card and fill the Gallery automatically.
+### Workflow for adding photos
 
-These panels are produced by `tools/generate-panels.js`. After editing the data
-(e.g. adding a technique), regenerate the set with:
+Full-size originals live in `assets/examples2/` (kept out of the deploy). To turn
+them into the lightweight versions the site serves, run:
 
 ```bash
-node tools/generate-panels.js
+bash tools/optimise-photos.sh
 ```
 
-### Swapping in a real photo
-
-To replace a generated panel with a real screenshot or still:
-
-- Save your image into `assets/examples/` named after the technique's id, e.g.
-  `silhouette.jpg`, at **1280 × 720 (16:9)**.
-- Change the extension used in `js/app.js` from `.svg` to `.jpg` — globally in
-  `techniqueMedia()` and the Gallery if replacing them all, or per-technique.
-- If a referenced file is missing, the card falls back to a clean placeholder —
-  nothing breaks.
+This reads every image in `assets/examples2/` and writes a max-1280px, ~quality-82
+JPEG to `assets/examples/<id>.jpg`. Name each source after the technique's id
+(e.g. `silhouette.png`) at a **16:9** aspect ratio. The original PNGs and the
+`examples2/` folder are git-ignored, so only the small JPEGs are published — the
+40 current stills total ~3.4 MB rather than ~71 MB.
 
 **`assets/examples/SEARCH-QUERIES.md`** lists a suggested filename and search
 terms for every technique, so you can quickly find clean, legally reusable photos.
