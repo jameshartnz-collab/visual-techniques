@@ -63,8 +63,8 @@
   }
 
   function techniqueMedia(t) {
-    // Prefer the optimised photo (assets/examples/<id>.jpg); fall back to the
-    // generated SVG panel for techniques whose photo isn't done yet.
+    // Show the photo (assets/examples/<id>.jpg); if it's ever missing, fall back
+    // to the matching <id>.svg panel so a card never breaks.
     const path = `assets/examples/${t.id}.jpg`;
     const fallback = `assets/examples/${t.id}.svg`;
     return `
@@ -72,7 +72,7 @@
         <span class="cat-stripe" style="background:var(${catVar(t.category)})"></span>
         <div class="tcard__placeholder" style="--cat-color:color-mix(in srgb, var(${catVar(t.category)}) 14%, var(--paper-2))">
           <span class="ph-icon">▦</span>
-          <span class="ph-text">Example slot</span>
+          <span class="ph-text">${esc(t.name)}</span>
         </div>
         <img src="${path}" alt="Example of ${esc(t.name)}" loading="lazy"
              onload="this.style.opacity=1"
@@ -384,18 +384,12 @@
           <p>Each technique is demonstrated with a cinematic still designed to make the visual idea clear without labels or diagrams.</p>
         </div>
 
-        <div class="gallery-note">
-          <h3>Image naming</h3>
-          <p>The site loads <code>assets/examples/&lt;id&gt;.jpg</code> for each technique. During the image-set
-          upgrade, any technique without an optimised cinematic JPEG falls back to its original SVG panel.</p>
-        </div>
-
         <div class="gallery-grid">
           ${TECHNIQUES.map((t) => `
             <figure class="gframe">
               <div class="tcard__placeholder" style="position:relative;height:100%;--cat-color:color-mix(in srgb, var(${catVar(t.category)}) 14%, var(--paper-2))">
                 <span class="ph-icon">▦</span>
-                <span class="ph-text">${esc(t.id)}.jpg</span>
+                <span class="ph-text">${esc(t.name)}</span>
               </div>
               <img src="assets/examples/${t.id}.jpg" alt="Example of ${esc(t.name)}" loading="lazy"
                    onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='assets/examples/${t.id}.svg'}else{this.remove()}"
