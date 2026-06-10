@@ -50,8 +50,13 @@
     </div>
   </footer>
 
-  <!-- Data first (defines window.VT), then the app. No build step, no server. -->
+  <!-- three.js (decorative hero background only). Loaded from CDN; if it's blocked
+       or offline, the hero simply falls back to its paper background. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Data first (defines window.VT), then the hero background, then the app. -->
   <script src="data/techniques.js"></script>
+  <script src="js/hero-bg.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

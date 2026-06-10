@@ -131,6 +131,7 @@
   function renderHome() {
     view.innerHTML = `
       <section class="hero hero--center">
+        <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
         <div class="hero__inner">
           <p class="hero__kicker">A Visual Techniques Guide</p>
           <h1>Every shot is a <em>choice.</em></h1>
@@ -190,6 +191,8 @@
         </div>
       </section>
     `;
+    // Decorative three.js background (no-op if three.js is unavailable).
+    if (window.HeroBg) window.HeroBg.mount(document.getElementById("heroBg"));
   }
   function homeLink(label, hint, href) {
     return `
@@ -544,6 +547,8 @@
 
   function render() {
     const { name, param } = currentRoute();
+    // Tear down the hero background before leaving/re-rendering; renderHome remounts it.
+    if (window.HeroBg) window.HeroBg.unmount();
     if (name === "finder" && param) renderFinderResult(param);
     else (routes[name] || renderHome)();
 

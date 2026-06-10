@@ -148,9 +148,14 @@ h1,h2,h3,h4 { font-family: var(--serif); line-height: 1.05; margin: 0; font-weig
 .footer__note { font-style: italic; color: var(--ink-soft); margin: 0; font-family: var(--serif); }
 
 /* ------------------------------- HERO ------------------------------------- */
-.hero { border-bottom: 2px solid var(--ink); background:
+.hero { position: relative; overflow: hidden; border-bottom: 2px solid var(--ink); background:
   radial-gradient(120% 90% at 80% -10%, var(--accent-tint), transparent 55%), var(--paper); }
-.hero__inner { max-width: var(--maxw); margin: 0 auto; padding: clamp(2.5rem,6vw,6rem) clamp(1rem,4vw,3rem) clamp(2rem,5vw,4.5rem); }
+/* Decorative three.js canvas layer — sits behind the text, never blocks clicks.
+   If three.js is unavailable or reduced-motion is on, this stays empty and the
+   paper/gradient background above shows through unchanged. */
+.hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.hero-bg canvas { display: block; width: 100% !important; height: 100% !important; }
+.hero__inner { position: relative; z-index: 1; max-width: var(--maxw); margin: 0 auto; padding: clamp(2.5rem,6vw,6rem) clamp(1rem,4vw,3rem) clamp(2rem,5vw,4.5rem); }
 .hero__kicker {
   font-size: var(--fs-label); letter-spacing: .28em; text-transform: uppercase;
   font-weight: 700; color: var(--accent-deep);
