@@ -9,6 +9,8 @@
 # add new images to assets/examples2/.
 #
 # Uses macOS `sips` if available, otherwise ImageMagick `convert`.
+#
+# Pass --missing-only to preserve JPEGs that have already been completed.
 
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -18,9 +20,18 @@ DST="assets/examples"
 mkdir -p "$DST"
 shopt -s nullglob
 
+mode="${1:-}"
+if [[ -n "$mode" && "$mode" != "--missing-only" ]]; then
+  echo "Usage: bash tools/optimise-photos.sh [--missing-only]" >&2
+  exit 2
+fi
+
 count=0
 for f in "$SRC"/*.png "$SRC"/*.PNG "$SRC"/*.jpg "$SRC"/*.jpeg "$SRC"/*.JPG; do
   id="$(basename "${f%.*}")"
+  if [[ "$mode" == "--missing-only" && -f "$DST/$id.jpg" ]]; then
+    continue
+  fi
   if command -v sips >/dev/null 2>&1; then
     sips -s format jpeg -s formatOptions 82 -Z 1280 "$f" --out "$DST/$id.jpg" >/dev/null
   elif command -v convert >/dev/null 2>&1; then

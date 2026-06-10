@@ -146,14 +146,18 @@ Full-size originals live in `assets/examples2/` (kept out of the deploy). To tur
 them into the lightweight versions the site serves, run:
 
 ```bash
-bash tools/optimise-photos.sh
+bash tools/optimise-photos.sh --missing-only
 ```
 
 This reads every image in `assets/examples2/` and writes a max-1280px, ~quality-82
 JPEG to `assets/examples/<id>.jpg`. Name each source after the technique's id
 (e.g. `silhouette.png`) at a **16:9** aspect ratio. The original PNGs and the
 `examples2/` folder are git-ignored, so only the small JPEGs are published — the
-40 current stills total ~3.4 MB rather than ~71 MB.
+optimised JPEG set is much smaller than the full-size originals.
+
+Use `--missing-only` when adding a batch so completed JPEGs are preserved. Run
+the script without that option only when you intentionally want to refresh every
+optimised JPEG from its full-size original.
 
 **`assets/examples/SEARCH-QUERIES.md`** lists a suggested filename and search
 terms for every technique, so you can quickly find clean, legally reusable photos.

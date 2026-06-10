@@ -383,8 +383,8 @@
 
         <div class="gallery-note">
           <h3>Image naming</h3>
-          <p>The site loads <code>assets/examples/&lt;id&gt;.png</code> for each technique. During the image-set
-          upgrade, any technique without a cinematic PNG temporarily falls back to its original SVG panel.</p>
+          <p>The site loads <code>assets/examples/&lt;id&gt;.jpg</code> for each technique. During the image-set
+          upgrade, any technique without an optimised cinematic JPEG falls back to its original SVG panel.</p>
         </div>
 
         <div class="gallery-grid">
@@ -392,7 +392,7 @@
             <figure class="gframe">
               <div class="tcard__placeholder" style="position:relative;height:100%;--cat-color:color-mix(in srgb, var(${catVar(t.category)}) 14%, var(--paper-2))">
                 <span class="ph-icon">▦</span>
-                <span class="ph-text">${esc(t.id)}.png</span>
+                <span class="ph-text">${esc(t.id)}.jpg</span>
               </div>
               <img src="assets/examples/${t.id}.jpg" alt="Example of ${esc(t.name)}" loading="lazy"
                    onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='assets/examples/${t.id}.svg'}else{this.remove()}"
