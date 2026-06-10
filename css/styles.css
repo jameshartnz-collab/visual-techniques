@@ -89,7 +89,8 @@ h1,h2,h3,h4 { font-family: var(--serif); line-height: 1.05; margin: 0; font-weig
 }
 .brand { display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto;
   column-gap: .6rem; align-items: center; text-decoration: none; }
-.brand__mark { grid-row: 1 / 3; font-size: 1.6em; color: var(--accent); letter-spacing: -.25em; }
+.brand__mark { grid-row: 1 / 3; display: flex; align-items: center; }
+.brand__mark svg { display: block; width: 2.5em; height: 2.5em; }
 .brand__name { font-family: var(--serif); font-weight: 900; letter-spacing: .14em;
   font-size: clamp(1.1rem, .9rem + .7vw, 1.6rem); }
 .brand__tag { font-size: var(--fs-label); letter-spacing: .18em; text-transform: uppercase;
