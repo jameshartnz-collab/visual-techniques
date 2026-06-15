@@ -147,6 +147,8 @@ h1,h2,h3,h4 { font-family: var(--serif); line-height: 1.05; margin: 0; font-weig
 .footer__line { font-size: var(--fs-body); margin: 0 0 .3rem; }
 .footer__line strong { font-family: var(--serif); letter-spacing: .12em; }
 .footer__note { font-style: italic; color: var(--ink-soft); margin: 0; font-family: var(--serif); }
+.footer__credit { font-size: var(--fs-label); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-soft); margin: 1.4rem 0 0; opacity: .75; }
 
 /* ------------------------------- HERO ------------------------------------- */
 .hero { position: relative; overflow: hidden; border-bottom: 2px solid var(--ink); background:
