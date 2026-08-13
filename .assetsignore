@@ -1,0 +1,14 @@
+# Repository and authoring files that are not part of the public site.
+.git/
+.wrangler/
+.DS_Store
+.gitignore
+AGENTS.md
+README.md
+media_studies_cinematic_image_prompts.md
+tools/
+wrangler.jsonc
+
+# Full-size image sources are local-only; the optimised JPEGs are public.
+assets/examples2/
+assets/examples/*.png

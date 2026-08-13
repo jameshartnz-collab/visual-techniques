@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mvtechniques",
+  "compatibility_date": "2026-08-14",
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    {
+      "pattern": "mvtechniques.mrhart.org",
+      "custom_domain": true
+    }
+  ]
+}

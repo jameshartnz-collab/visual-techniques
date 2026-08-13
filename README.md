@@ -32,9 +32,20 @@ JavaScript.
   npx serve .
   ```
 
-- **To publish for students:** push the folder to GitHub and turn on **GitHub
-  Pages** (Settings → Pages → deploy from branch). Any static host works
-  (Netlify, Vercel, school server) — there is no backend.
+- **To publish for students:** run `bash tools/deploy.sh`. It pushes to **GitHub
+  Pages** and deploys the same static files to the custom domain on Cloudflare.
+  There is no backend.
+
+The two public addresses are:
+
+- <https://jameshartnz-collab.github.io/visual-techniques/> — the established
+  teacher-facing GitHub Pages address.
+- <https://mvtechniques.mrhart.org/> — the shorter custom-domain copy.
+
+Both addresses remain live independently and are updated by the same deploy
+command. Cloudflare deployment requires James's existing Wrangler login; the
+GitHub Pages copy continues to deploy from `main` even if Cloudflare is
+temporarily unavailable.
 
 > Tip: press the **number keys 1–6** to jump between the six sections. The site
 > is fully responsive and is designed to read clearly on a classroom projector

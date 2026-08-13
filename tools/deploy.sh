@@ -8,6 +8,7 @@
 #   1. Optimise any NEW photos in assets/examples2/ that don't have a JPEG yet.
 #   2. Stage everything, commit (skipped if nothing changed).
 #   3. Push to GitHub → GitHub Pages redeploys automatically.
+#   4. Deploy the same files to mvtechniques.mrhart.org on Cloudflare.
 #
 # Requires GitHub auth to be set up once (e.g. `gh auth login`), so no token prompt.
 
@@ -34,6 +35,12 @@ fi
 echo "Pushing…"
 git push
 
+# 4. Publish the same static site on the custom domain. Wrangler reads
+#    .assetsignore so local source images and repository files are not uploaded.
+echo "Deploying mvtechniques.mrhart.org…"
+npx --yes wrangler@4.123.0 deploy
+
 echo ""
-echo "Done. Live in ~1 minute at:"
+echo "Done. Live at:"
 echo "  https://jameshartnz-collab.github.io/visual-techniques/"
+echo "  https://mvtechniques.mrhart.org/"
